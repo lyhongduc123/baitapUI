@@ -1,0 +1,114 @@
+#topBox {
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 0;
+}
+
+.button {
+    -fx-background-radius: 10em;
+    -fx-min-width: 35px;
+    -fx-min-height: 35px;
+}
+
+#callButton, #videoButton {
+    -fx-background-color: derive(#f4f4f4, -10%);
+    -fx-pref-width: 35px;
+    -fx-pref-height: 35px;
+}
+
+#callButton:pressed, #videoButton:pressed {
+    -fx-background-color: derive(#f4f4f4, -20%);
+}
+
+#imageButton, #recordButton {
+    -fx-background-color: derive(#f4f4f4, -10%);
+    -fx-pref-width: 35px;
+    -fx-pref-height: 35px;
+}
+
+#imageButton:pressed, #recordButton:pressed {
+    -fx-background-color: derive(#f4f4f4, -20%);
+}
+
+#backButton {
+    -fx-background-color: inherit;
+    -fx-pref-width: 35px;
+    -fx-pref-height: 35px;
+}
+
+#backButton:pressed {
+    -fx-background-color: derive(#f4f4f4, -20%);
+}
+
+#sendButton {
+    -fx-background-color: derive(#f4f4f4, -10%);
+    -fx-background-radius: 1.5em;
+    -fx-pref-width: 35px;
+    -fx-pref-height: 35px;
+}
+
+#sendButton:pressed {
+    -fx-background-color: derive(#f4f4f4, -20%);
+}
+
+#nametagLabel {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #000000;
+    -fx-background-color: pink;
+    -fx-background-radius: 2em;
+    -fx-alignment: center;
+}
+
+#nameLabel {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+#statusLabel {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: derive(#000000, 80%);
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-min-height: 35;
+    -fx-pref-height: 35;
+}
+
+#messageBox {
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 1.5em;
+    -fx-border-color: derive(#000000, 100%);
+    -fx-border-radius: 1.5em;
+    -fx-min-height: 35;
+    -fx-pref-height: 35;
+}
+
+#rightMessageContainer {
+    -fx-background-color: #5921e7;
+    -fx-background-radius: 15 0 15 15;
+    -fx-border-color: transparent;
+    -fx-padding: 0 10 5 10;
+}
+
+#leftMessageContainer {
+    -fx-background-color: pink;
+    -fx-background-radius: 0 15 15 15;
+    -fx-border-color: transparent;
+    -fx-padding: 0 10 5 10;
+}
+
+#message {
+    -fx-font-size: 1.2em;
+    -fx-fill: #ffffff;
+}
+
+.scroll-pane {
+    -fx-background: #d6d5e1;
+    -fx-border-color: transparent;
+}
+
+.avatar {
+    -fx-stroke: transparent;
+}

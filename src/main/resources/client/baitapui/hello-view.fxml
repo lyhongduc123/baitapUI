@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="600.0" prefWidth="350.0" stylesheets="@../../css/hello-view_style.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.baitapui.HelloController">
+   <children>
+      <HBox fx:id="topBox" alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="avatar" fitHeight="80.0" fitWidth="64.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../../icons/Avatar.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nametagLabel" prefHeight="20.0" prefWidth="52.0" text="GF" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </AnchorPane>
+            <VBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="254.0">
+               <children>
+                  <Label fx:id="nameLabel" text="LA LALISA" />
+                  <Label fx:id="statusLabel" text="Label">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <Circle fx:id="statusIcon" fill="#4fd165" radius="5.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                     </graphic>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <Button fx:id="callButton" mnemonicParsing="false">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/Call.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="videoButton" mnemonicParsing="false">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/Video%20Call.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollChat" layoutY="103.0" prefHeight="373.0" prefWidth="304.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <content>
+            <VBox fx:id="chatBox" prefHeight="450.0" prefWidth="350.0" />
+         </content>
+      </ScrollPane>
+      <HBox fx:id="bottomBox" alignment="BOTTOM_LEFT" prefHeight="40.0" prefWidth="350.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="imageButton" mnemonicParsing="false">
+               <HBox.margin>
+                  <Insets bottom="3.0" left="10.0" right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/Image.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox fx:id="messageBox" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="textBox" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField prefWidth="650.0" promptText="Your Message..." />
+                     </children>
+                  </VBox>
+                  <Button fx:id="sendButton" mnemonicParsing="false" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/Send.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </HBox>
+            <Button fx:id="recordButton" mnemonicParsing="false">
+               <HBox.margin>
+                  <Insets bottom="3.0" right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/Microphone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <VBox prefHeight="200.0" prefWidth="100.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
